@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- ! Favicon -->
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+
+    <!-- ! Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- ! Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- ! Fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ! External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ! Navbar Baslangıç -->
+    <nav class="navbar navbar-expand-md bg-siyah position-sticky top-0 z-1" id="navbar">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars text-white"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="text-white nav-link active" aria-current="page" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="text-white nav-link" href="/index.html#giris">My Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="text-white nav-link" href="/index.html#about-me">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="text-white nav-link" href="/index.html#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <div class="btn-group d-md-none">
+                  <button type="button" class="btn bg-transparent dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-translate" viewBox="0 0 16 16">
+                      <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z"/>
+                      <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31"/>
+                  </svg>
+                  <span class="text-white">English</span>              
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                    <hr class="w-75 m-auto my-2">
+                    <li><a class="dropdown-item" href="#">Türkçe</a></li>
+                    <hr class="w-75 m-auto my-2">
+                    <li><a class="dropdown-item" href="#">Deutsch</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="m-0 text-white fs-5">Enis Talha Şahin</p>
+          </div>
+          <div class="me-5 ps-3">
+            <div class="btn-group d-md-block d-none">
+              <button type="button" class="btn bg-transparent dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-translate" viewBox="0 0 16 16">
+                  <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z"/>
+                  <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31"/>
+              </svg>
+              <span class="text-white">English</span>              
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <hr class="w-75 m-auto my-2">
+                <li><a class="dropdown-item" href="#">Türkçe</a></li>
+                <hr class="w-75 m-auto my-2">
+                <li><a class="dropdown-item" href="#">Deutsch</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!-- ! Navbar Bitiş -->
+
+    <!-- ! Giriş Başlangıç -->
+    <div class="w-100 text-center mt-5 pt-5 giris-yukseklik">
+        <h1 class="text-white fs-70 mt-5 pt-5">Enis Talha Şahin</h1>
+        <div class="wrapper d-flex justify-content-center">
+          <h5 class="m-0 text-white mb-5 mt-4 yazi-boyut">
+            I'm a
+          </h5>
+          <h5 class="m-0 text-white mb-5 mt-4 yazi-boyut">
+            ㅤ
+          </h5>
+          <h5 class="m-0 text-white mb-5 mt-4 yazi yazi-boyut">
+             computer engineering student.
+          </h5>
+        </div>
+        <a href="/index.html#giris">
+            <i class="fa-solid fa-chevron-down text-white fs-5 mt-10 pt-5"></i>
+        </a>
+    </div>
+    <!-- ! Giriş Bitiş -->
+
+    <!-- ! Çalışmalar Başlangıç -->
+    <div id="giris" class="pt-3">
+        <h2 class="text-center pt-5 text-white">My Work</h2>
+        <p class="text-center text-white kucuk-yazi-boyut">In this section, I showcase my projects and the skills I've developed through them.</p>
+        <div class="container projects mt-5">
+            <div class="row">
+                <div class="col-md-6 col-12 p-0 py-2 px-2 d-flex justify-content-center">
+                    <div class="bir">
+                        <a href="https://enstalha.github.io/exxen-clon/" target="_blank">
+                          <div class="card mb-3 pe-sm-2 rounded-3 card-yukseklik bg-black">
+                            <div class="row g-0">
+                              <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                <img class="resim-boyut" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPCKFPmHzlPtVtp-wrRNVZMrCeoXipa4gT_g&s" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title text-white">Exxen Clon</h5>
+                                  <p class="card-text text-secondary">Focused on the user interface and functionality to closely match the original platform. This project highlights my skills in front-end development and attention to detail.</p>
+                                  <p class="card-text"><small class="text-secondary">Last updated 3 mins ago</small></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 p-0 py-2 px-2 d-flex justify-content-center">
+                    <div class="iki">
+                        <a href="https://enstalha.github.io/netflix-clon/" target="_blank">
+                          <div class="card mb-3 rounded-3 bg-black card-yukseklik">
+                            <div class="row g-0">
+                              <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                <img class="resim-boyut" src="https://cdn.dribbble.com/users/9378043/screenshots/16832559/netflix__1_.png" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title text-white">Netflix Clon</h5>
+                                  <p class="card-text text-secondary">This project is a clone application that mimics the user interface and core functionalities of Netflix. It simulates content discovery and viewing experience and is developed using HTML and CSS.</p>
+                                  <p class="card-text"><small class="text-secondary">Last updated 3 mins ago</small></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 p-0 py-2 px-2 d-flex justify-content-center">
+                    <div class="bir">
+                        <a href="https://enstalha.github.io/aksan-takim-clon/" target="_blank">
+                          <div class="card mb-3 rounded-3 card-yukseklik bg-black">
+                            <div class="row g-0">
+                              <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                <img class="resim-boyut mt-5 mt-md-0" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwqaRCuKV6enkwkLRGD48OMEF8HYrhpfs8Mw&s" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body mt-5 mt-md-0">
+                                  <h5 class="card-title text-white">Aksan Hukuk Bürosu Clon</h5>
+                                  <p class="card-text text-secondary">This project is a clone of Aksan Law Office's professional and modern website. It features a user-friendly interface and functionality, developed using HTML and CSS.</p>
+                                  <p class="card-text"><small class="text-secondary">Last updated 3 mins ago</small></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 p-0 py-2 px-2 d-flex justify-content-center">
+                    <div class="iki">
+                        <a href="https://enstalha.github.io/spotify-clon/" target="_blank">
+                          <div class="card mb-3 rounded-3 bg-black card-yukseklik">
+                            <div class="row g-0">
+                              <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                <img class="resim-boyut" src="https://static.vecteezy.com/system/resources/previews/006/642/202/original/spotify-icon-spotify-logo-spotify-symbol-logo-set-free-vector.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title text-white">Spotify Clon</h5>
+                                  <p class="card-text text-secondary">This project is a clone of Spotify’s user interface and core features. It replicates the music discovery and playback experience and is built using HTML and CSS.</p>
+                                  <p class="card-text"><small class="text-secondary">Last updated 3 mins ago</small></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 p-0 py-2 px-2 d-flex justify-content-center">
+                    <div class="iki">
+                        <a href="https://enstalha.github.io/mediamarkt-clon/" target="_blank">
+                          <div class="card mb-3 rounded-3 bg-black card-yukseklik">
+                            <div class="row g-0">
+                              <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                <img class="resim-boyut mt-3 mt-md-0" src="https://logowik.com/content/uploads/images/328_mediamarkt.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title text-white">MediaMarkt Clon</h5>
+                                  <p class="card-text text-secondary">This project is a clone of MediaMarkt's website, showcasing a user-friendly interface and core functionalities for an electronic retail experience. Developed using HTML and CSS.</p>
+                                  <p class="card-text"><small class="text-secondary">Last updated 3 mins ago</small></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ! Çalışmalar Bitiş -->
+
+    <!-- ! About Me Başlangıç -->
+    <div id="about-me" class="pt-5">
+        <h2 class="text-white text-center mt-3">
+            About Me
+        </h2>
+        <div class="container-about">
+            <h4 class="text-white w-75 mt-4">
+                Hello! I'm Enis Talha Şahin.
+            </h4>
+            <p class="text-secondary mt-3">
+                <span class="ms-3">As</span> a computer engineering student, I’m passionate about technology and software development. I have a solid understanding of HTML and CSS, and I’m also proficient in Python and have some knowledge of C#. I’m currently studying Computer Engineering, where I’ve developed and worked on various projects.
+            </p>
+            <h4 class="text-white w-75 mt-4">Education</h4>
+            <ul class="mt-3">
+                <li class="text-secondary">
+                    ICDAS Science High School
+                </li>
+                <li class="text-secondary">
+                    Karabuk University - Computer Engneering
+                </li>
+            </ul>
+            <h4 class="text-white w-75 mt-4">Language</h4>
+            <ul class="mt-3">
+                <li class="text-secondary">
+                    Turkish (Native)
+                </li>
+                <li class="text-secondary">
+                    English (Intermediate)
+                </li>
+                <li class="text-secondary">
+                    German (Learning)
+                </li>
+            </ul>
+            <h4 class="text-white w-75 mt-4">
+                Skills
+            </h4>
+            <p class="text-secondary mt-3 ms-3">
+                HTML
+            </p>
+            <div class="progress bg-white border border-1 border-secondary" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-black" style="width: 80%"></div>
+            </div>
+            <p class="text-secondary mt-3 ms-3">
+                CSS
+            </p>
+            <div class="progress bg-white border border-1 border-secondary" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-black" style="width: 85%"></div>
+            </div>
+            <p class="text-secondary mt-3 ms-3">
+                Python
+            </p>
+            <div class="progress bg-white border border-1 border-secondary" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-black" style="width: 50%"></div>
+            </div>
+            <p class="text-secondary mt-3 ms-3">
+                C#
+            </p>
+            <div class="progress bg-white border border-1 border-secondary" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-black" style="width: 10%"></div>
+            </div>
+            <h4 class="text-white w-75 mt-4">
+                Career Goals
+            </h4>
+            <p class="text-secondary mt-3">
+                <span class="ms-3">I</span> aim to work as a software engineer at a forward-thinking tech company where I can apply my skills in Python and C#. I’m excited to tackle challenging problems, collaborate with talented teams, and grow professionally while making a positive impact in the tech industry.
+            </p>
+            <h4 class="text-white w-75 mt-4">
+                Interests
+            </h4>
+            <p class="text-secondary mt-3">
+              <span class="ms-3">As</span> a computer engineering student, I'm passionate about technology and constantly seeking to expand my knowledge. My journey in the field has led me to explore various aspects of software development, with a strong focus on front-end technologies. I have worked on multiple projects where I honed my skills in HTML, CSS, and JavaScript, and I'm always eager to take on new challenges to push my boundaries further. Outside of coding, I enjoy playing tennis, basketball, chess, and the electric guitar, which help me maintain a balanced lifestyle.
+            </p>
+        </div>
+    </div>
+    <!-- ! About Me Bitiş -->
+
+    <!-- ! Contact Başlangıç -->
+    <div id="contact" class="pt-5 yukseklik">
+        <h2 class="text-white text-center pt-3 pb-3">Contact</h2>
+        <div class="container-about">
+            <h5 class="text-white mt-5">Feel free to get in touch through the following channels:</h5>
+            <div class="text-white d-flex gap-4 justify-content-center mt-4"> 
+                <a href="https://www.instagram.com/enisstalha/" target="_blank">
+                    <i class="text-white fs-2 fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="text-white fs-2 fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="#">
+                    <i class="text-white fs-2 fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="text-white fs-2 fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/enstalha" target="_blank">
+                    <i class="text-white fs-2 fa-brands fa-github"></i>
+                </a>
+                <a href="#">
+                    <i class="text-white fs-2 fa-solid fa-envelope"></i>
+                </a>
+            </div>
+            <h5 class="text-white mt-4">You can also contact with me from here:</h5>
+            <div class="d-flex justify-content-center w-100">
+                <div class="w-75 form input-genislik">
+                    <p class="m-0 text-secondary mt-3 mb-1">Name*</p>
+                    <input class=" bg-transparent border-input p-2 w-75 input-genislik" type="text" placeholder="Your Name...">
+                    <p class="m-0 text-secondary mt-3 mb-1">Email Adress*</p>
+                    <input class="input-genislik bg-transparent border-input p-2 w-75" type="text" placeholder="Your Email Adress...">
+                    <p class="m-0 text-secondary mt-3 mb-1">Message*</p>
+                    <textarea class="input-genislik bg-transparent w-75 h-50 p-2" placeholder="Your Message..."></textarea>
+                    <div class="d-flex justify-content-center w-75 mt-2 input-genislik">
+                        <div class="btn bg-white fw-medium mt-2 text-center" type="submit">Submit</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ! Contact Bitiş -->
+
+    <!-- ! Footer Başlangıç -->
+    <div class="container-about mt-5">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item">
+                <a href="/index.html#giris" class="nav-link px-2 text-white">
+                    Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/index.html#giris" class="nav-link px-2 text-white">
+                    My Work
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/index.html#about-me" class="nav-link px-2 text-white">
+                    About Me
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/index.html#contact" class="nav-link px-2 text-white">
+                    Contact
+                </a>
+            </li>
+          </ul>
+          <p class="text-center text-secondary">© 2024 Company, Inc</p>
+        </footer>
+      </div>
+    <!-- ! Footer Bitiş -->
+
+    <!-- ! Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

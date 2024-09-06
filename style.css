@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+    letter-spacing: 1px;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #1F1F1F;
+}
+
+.bg-siyah{
+    background-color: #191919;
+}
+
+.navbar-container{
+    margin-inline: 6% !important;
+}
+
+.fs-70{
+    font-size: 70px !important;
+}
+
+.card-yukseklik{
+    height: 250px;
+}
+
+.container-about{
+    margin-inline: 12%;
+} 
+
+.mt-10{
+    margin-top: 170px !important;
+    padding-bottom: 50px !important;
+}
+
+.border-input{
+    border: 0.01px solid gray;
+}
+
+:focus{
+    color: white;
+}
+
+.yukseklik{
+    height: 750px !important;
+}
+
+.resim-boyut{
+    width: 100%;
+}
+
+input, textarea{
+    outline: 0;
+}
+
+.card{
+    width: 100% !important;
+    height: 100% !important;
+    transition: all 0.5s ease;
+}
+
+.card:hover{
+    width: 95% !important;
+    height: 95% !important;
+}
+
+.i-boyut{
+    width: 50px;
+    height: 50px;
+}
+
+.wrapper {
+    display: grid;
+    place-items: center;
+}
+  
+.yazi {
+    animation: typing 7s steps(22) infinite, blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    text-align: left;
+}
+  
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 24%;
+    }
+    100% {
+        width: 0;
+    }
+}
+  
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .resim-boyut{
+        width: 75%;
+    }
+    .card-yukseklik{
+        height: 100%;
+    }
+    .kucuk-yazi-boyut{
+        font-size: 14px;
+        margin-inline: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .resim-boyut{
+        width: 30%;
+        margin-top: 5px;
+    }
+    .input-genislik{
+        width: 100% !important;
+    }
+    .card-yukseklik{
+        margin-inline: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .card{
+        width: 95% !important;
+    }
+    .card:hover{
+        width: 95% !important;
+        height: 95% !important;
+    }
+    .yazi-boyut{
+        font-size: 15px !important;
+    }
+    @keyframes typing {
+        0% {
+            width: 0;
+        }
+        50% {
+            width: 65%;
+        }
+        100% {
+            width: 0;
+        }
+    }
+}
+
